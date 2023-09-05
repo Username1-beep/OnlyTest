@@ -1,0 +1,146 @@
+body {
+   background-image: url("./src/background-main.png"); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   /* background-size: contain; */
+   background-color: black;
+}
+.button-1 {
+   position: absolute;
+   top: 44%;
+   left: 33%;
+}
+.button-2 {
+   position: absolute;
+   bottom: 23%;
+   right: 40%;
+}
+.button-3 {
+   position: absolute;
+   top: 38%;
+   right: 38%;
+}
+.button-4 {
+   position: absolute;
+   bottom: 34%;
+   right: 30%;
+}
+.button-5 {
+   position: absolute;
+   bottom: 30%;
+   left: 23%;
+}
+.button-6 {
+   position: absolute;
+   top: 27%;
+   left: 30%;
+}
+.button-7 {
+   position: absolute;
+   bottom: 38%;
+   right: 42%;
+}
+.button-8 {
+   position: absolute;
+   top: 44%;
+   right: 25%;
+}
+.button-9 {
+   position: absolute;
+   top: 20%;
+   right: 26%;
+}
+.button-10 {
+   position: absolute;
+   bottom: 30%;
+   right: 15%;
+}
+
+button {
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 41px;
+   height: 41px;
+   font-size: 20px;
+   padding: 5px;
+   cursor: pointer;
+   background-color: transparent;
+   
+}
+.btn-container {
+   display: inline-flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+.button-caption {
+   white-space: nowrap; 
+   width: auto;
+}
+.greens-bt.unclicked {
+   background-color: rgba(106, 191, 75, 0.7);
+}
+.blues-bt.unclicked {
+   background-color: rgba(56, 119, 238, 0.7);
+}
+
+.expand-button {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   border-radius: 50%;
+   font-size: 20px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   padding: 10px;
+}
+.button-label {
+   padding: 5px;
+   background-color: transparent;
+   transition: all 0.3s ease-in-out;
+}
+.button-caption {
+   white-space: nowrap;
+   padding: 5px;
+   background-color: transparent;
+   transition: all 0.3s ease-in-out;
+   position: absolute;
+   font-size: 18px;
+   left: 41px;
+   display: none;
+}
+.greens-bt.clicked .button-label {
+   display: none;
+   background-color: transparent;
+}
+.blues-bt.clicked .button-label {
+   display: none;
+   background-color: transparent;
+}
+.greens-bt.clicked .button-caption {
+   display: block;
+   transform: translateY(0);
+   border-radius: 30%;
+   padding-top: 9px;
+   padding-bottom: 9px;
+   padding-left: 10px;
+   padding-right: 15px;
+   background-color: rgba(106, 191, 75, 1);
+   margin-left: -41px;
+}
+.blues-bt.clicked .button-caption {
+   display: block;
+   transform: translateY(0);
+   background-color: rgba(56, 119, 238, 1);
+   border-radius: 30%;
+   padding-top: 9px;
+   padding-bottom: 9px;
+   padding-left: 10px;
+   padding-right: 15px;
+   margin-left: -41px;
+}
+ 
